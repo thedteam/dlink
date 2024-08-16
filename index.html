@@ -52,6 +52,14 @@
     box-sizing: border-box;
 }
 
+/* Disable text selection */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
     font-family: 'Helvetica', sans-serif;
     background-color: var(--bg-color);
@@ -272,6 +280,28 @@ themeToggle.addEventListener('change', () => {
     }
 });
 
+// Disable right-click
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+// Disable text copying
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+});
+
+// Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U to block some developer tools
+document.addEventListener('keydown', function(e) {
+    // Block F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+    if (
+        e.key === 'F12' || // Block F12
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || // Block Ctrl+Shift+I and Ctrl+Shift+J
+        (e.ctrlKey && e.key === 'U') // Block Ctrl+U
+    ) {
+        e.preventDefault();
+        alert("Viewing the page source and developer tools are disabled.");
+    }
+});
     </script>
     
 </body>
