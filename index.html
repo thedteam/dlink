@@ -1,252 +1,278 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-  <title>The 'D Team - Bio Link Tree</title>
-  
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no ">
+    <title>The 'D Team - Bio Link Tree</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://dlink.thedteam.in/assets/img/favicon.png" type="image/x-icon">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
+    <div class="container">
+        <div class="profile">
+            <img src="https://dlink.thedteam.in/assets/img/logo.gif" alt="Profile Picture" class="profile-pic" ondragstart="return false;">
+            <h1>The 'D Team</h1>
+            <p class="bio">#being different</p>
+        </div>
 
-<html>
+        <div class="links">
+            <a href="https://bit.ly/thedteam" class="link" target="_blank"><i class="ri-leaf-line" style="padding:2px"></i>The 'D Team</a>
+            <a href="https://bit.ly/thedclient" class="link" target="_blank"><i class="fab fa-airbnb" style="padding:2px"></i> The 'D Client</a>
+            <a href="https://bit.ly/deepakdesigns" class="link" target="_blank"><i class="fab fa-gripfire" style="padding:2px"></i>Deepak Designs</a>
+            <a href="http://g.page/deepak-designs-bangalore" class="link" target="_blank"><i class="fab fa-google" style="padding:2px"></i> Deepak Designs </a>
+            <a href="tel:+917019043569" class="link" target="_blank"><i class="fa fa-mobile-alt" style="padding:2px"></i> Call Now@ 7019043569</a>
+        </div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>The 'D Team </title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-          <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/preloader.css">
-</head>
+        <div class="socials">
+            <a href="https://www.facebook.com/different.by.designing/" class="social-icon" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://x.com/deepak_designs/" class="social-icon" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/deepakdesigns10/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=917019043569&text=Hi%20The%20%27D%20Team%20-%20I%27m%20interested%20in%20Graphic%20design%20service!%20https://bit.ly/thedteam" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.threads.net/@thedteam.in" class="social-icon" target="_blank"><i class="fa-brands fa-threads"></i></a>
+        </div>
 
-<body>
+        <footer class="footer">
+            <p>&copy; 2024 <a href="https://bit.ly/thedteam" target="_blank">The 'D Team</a></p>
+        </footer>
+            <!-- Dark Mode Toggle below Footer -->
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <span id="theme-label">Light Mode</span>
+    </div>
+    </div>
 
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="assets/img/logo.gif" alt="#" ondragstart="return false;"/>
-<div class="centered"><h3>The 'D Team Links</h3></div></div>
-      </div>
-      <!-- end loader -->
-
-  <style>
-    /* Style Settings */
-    body {
-      background-color: rgb(0, 0, 0);
-      font-family: "Roboto", sans-serif;
-      margin: auto;
-      padding: 10px;
-      display: flex column;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-    }
-
-    .Bottom-Section {
-      margin: auto;
-      width: 50%;
-      align-items: center;
-    }
-.centered {
-  position: absolute;
-  top: 64%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-    #userPhoto {
-      width: 150px;
-      height: 150px;
-      display: block;
-      margin: 45px auto 30px;
-      border-radius: 50%;
-      border: solid #e6e6e6 2px;
-      box-shadow: 0px 7px 15px rgba(20, 20, 20, 0.5);
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 105vh;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light and Dark Mode Variables */
+:root {
+    --bg-color: #f7f7f7;
+    --text-color: #000000;
+    --container-bg: #ffffff;
+    --link-bg: #007bff;
+    --link-hover-bg: #0056b3;
+    --social-icon-color: #888888;
+    --social-icon-hover: #007bff;
+}
+
+.dark-theme {
+    --bg-color: #181818;
+    --text-color: #ffffff;
+    --container-bg: #242424;
+    --link-bg: #555555;
+    --link-hover-bg: #777777;
+    --social-icon-color: #bbbbbb;
+    --social-icon-hover: #ffffff;
+}
+
+.container {
+    background-color: var(--container-bg);
+    width: 90%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.profile {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid #e0e0e0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--link-bg);
+    padding: 14px;
+    border-radius: 12px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 100px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link:hover {
+    background-color: var(--link-hover-bg);
+    transform: translateY(-3px);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: var(--social-icon-color);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+    color: var(--social-icon-hover);
+    transform: scale(1.2);
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: var(--link-bg);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Theme Toggle Switch (Position below footer) */
+.theme-toggle {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #007bff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#theme-label {
+    margin-left: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+
+    </style>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+const themeLabel = document.getElementById('theme-label');
+
+// Check for saved user preference, if any
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme) {
+    body.classList.add(currentTheme);
+    themeLabel.textContent = currentTheme === 'dark-theme' ? 'Dark Mode' : 'Light Mode';
+    if (currentTheme === 'dark-theme') {
+        themeToggle.checked = true;
     }
+}
 
-    #userName {
-      color: #1c1c1c;
-      font-size: 25px;
-      display: block;
-      margin: auto;
-      width: 50%;
-      text-align: center;
-      text-decoration: none;
+themeToggle.addEventListener('change', () => {
+    if (themeToggle.checked) {
+        body.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark-theme');
+        themeLabel.textContent = 'Dark Mode';
+    } else {
+        body.classList.remove('dark-theme');
+        localStorage.setItem('theme', 'light-theme');
+        themeLabel.textContent = 'Light Mode';
     }
+});
 
-    #links {
-      max-width: 600px;
-      width: auto;
-      margin: 25px auto;
-      display: flex column;
-      flex-wrap: wrap;
-      padding: 10px;
-    }
-
-    .link {
-      display: block;
-      background-color: #e6e6e6;
-      color: #1c1c1c;
-      font-family: inherit;
-      text-align: center;
-      margin-bottom: 20px;
-      padding: 17px;
-      text-decoration: none;
-      font-size: 20px;
-      border: solid #e6e6e6 2px;
-      box-shadow: 0px 7px 15px rgba(20, 20, 20, 0.5);
-    }
-
-    .link:hover {
-      background-color: #1c1c1c;
-      color: #e6e6e6;
-    }
-
-    .icon-container {
-      display: flex;
-      justify-content: space-evenly;
-      padding: 15px;
-      margin: auto;
-      width: 60%;
-      align-items: center;
-      text-align: center;
-    }
-
-    .icon {
-      font-size: 20px;
-      color: rgb(255, 255, 255);
-      opacity: 0.6;
-      height: 30px;
-      text-decoration: none;
-    }
-
-    .icon:hover {
-      color: rgb(255, 255, 255);
-      opacity: 1.6;
-    }
-
-    p {
-      text-align: center;
-      color: #bbb;
-    }
-
-    /*This Glowing Hover Effect was made by qpi65 , i used it to Highlight my name */
-    h1 {
-      color: #ffffff;
-      font-size: 30px;
-      font-weight: bold;
-      font-family: monospace;
-      letter-spacing: 0px;
-      cursor: pointer
-    }
-
-    h1 span {
-      transition: .5s linear
-    }
-
-    h1:hover span {
-      color: Black;
-      text-shadow:
-        0 0 10px #fff,
-        0 0 20px white,
-        0 0 40px black;
-    }
-
-
-
-    /*This Glowing Hover Effect was made by qpi65 , i used it to Highlight my name */
-  </style>
-  <img id="userPhoto" src="assets/img/logo.gif" alt="User Photo" ondragstart="return false;">
-  <a class="icon" href="https://bit.ly/thedteam" id="userName" target="_blank">
-    <h1><span>The 'D Team</span></h1>
-  </a>
-  <div id="links">
-    <a class="link" href="https://bit.ly/thedteam" target="_blank"><i class="ri-leaf-line" style="padding:10px"></i> The D Team - website </a>
-    <a class="link" href="https://bit.ly/deepakdesigns" target="_blank"><i class="fab fa-gripfire fa-beat" style="padding:10px"></i> Deepak Designs - website </a>
-    <a class="link" href="https://bit.ly/thedclient" target="_blank"><i class="fab fa-airbnb fa-beat" style="padding:10px"></i> The D Client - website </a>
-    <a class="link" href="https://deepakdesigns10.business.site/" target="_blank"><i class="fab fa-google fa-beat" style="padding:10px"></i> Deepak Designs - Google site </a>
-    <a class="link" href="tel:+917019043569" target="_blank"><i class="fa fa-mobile-alt fa-beat" style="padding:10px"></i> Call Now - Jio </a>
-    <a class="link" href="https://www.facebook.com/different.by.designing/" target="_blank"><i class="fab fa-facebook-square fa-beat" style="padding:10px"></i>Faceook</a>
-    <a class="link" href="https://wa.me/+917019043569/" target="_blank"><i class="fab fa-whatsapp fa-beat" style="padding:10px"></i>WhatsApp</a>
-    <a class="link" href="https://www.instagram.com/deepakdesigns10/" target="_blank"><i class="fa fa-instagram fa-beat" style="padding:10px"></i>Instagram</a>
-    <a class="link" href="https://twitter.com/deepak_designs/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-beat" style="padding:10px"></i>Twitter</a>
-<a class="link" href="https://www.threads.net/@thedteam.in" target="_blank"><i class="fa-brands fa-threads fa-beat" style="padding:10px"></i>Threads</a>
-    <a class="link" href="https://www.youtube.com/channel/UCAGxmICiSM0fqGoK537xedw" target="_blank"><i class="fa fa-youtube fa-beat" style="padding:10px"></i>Youtube</a>
-    <a class="link" href="https://www.linkedin.com/in/deepakrpatilsce" target="_blank"><i class="fa fa-linkedin-square fa-beat" style="padding:10px"></i>Linkedin</a>
-    <a class="link" href="https://github.com/" target="_blank"><i class="fa fa-github fa-beat" style="padding:10px"></i>Github</a>
-    <a class="link" href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow fa-beat" style="padding:10px"></i>Stackoverflow</a>
-  </div>
-  <div class="Bottom-Section">
-    <p style="color:rgb(255, 255, 255)">You Can Also Find me Here:</p>
-    <div class="icon-container">
-      <a class="icon" href="" target="_blank"><i class="fa fa-medium"></i></a>
-      <a class="icon" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
-      <a class="icon" href="" target="_blank"><i class="fa fa-tumblr-square"> </i></a>
-      <a class="icon" href="" target="_blank"><i class="fa fa-vimeo"></i></a>
-      <a class="icon" href="" target="_blank"><i class="fa fa-snapchat"></i></a>
-    </div>
-  </div>
-  <footer style="text-align:center;">
-    <p style="color:rgb(255, 255, 255)">Powered by : <a class="icon" href="https://bit.ly/thedteam" target="_blank">The 'D Team</p>
-  </footer>
-
-  <!-- Javascript -->
-  <script src="https://kit.fontawesome.com/7e482ae4fd.js"></script>
-<script src="assets/js/preloader.js"></script> 
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-<script>
-	window.oncontextmenu = function () {
-				return false;
-			}
-			$(document).keydown(function (event) {
-				if (event.keyCode == 123) {
-					return false;
-				}
-				else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
-					return false;
-				}
-			});
-		</script>
-
-<script language="JavaScript">
-
-//////////F12 disable code////////////////////////
-    document.onkeypress = function (event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-           //alert('No F-12');
-            return false;
-        }
-    }
-    document.onmousedown = function (event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            //alert('No F-keys');
-            return false;
-        }
-    }
-document.onkeydown = function (event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            //alert('No F-keys');
-            return false;
-        }
-    }
-/////////////////////end///////////////////////
-</script>
-</body>
-
-</html>
-<!-- partial -->
-  	<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=aa90264cde51a' async='true'></script>
-	<style> 
-	.poptin-credit { display: none; }
-	</style>
+    </script>
+    
 </body>
 </html>
